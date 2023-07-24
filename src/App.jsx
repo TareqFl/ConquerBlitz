@@ -1,4 +1,4 @@
-import { Box, CssBaseline } from '@mui/material';
+import { Box, CssBaseline, Typography } from '@mui/material';
 import React from 'react';
 import NavBar from './Components/NavBar';
 import Canvas from './Components/Game/Canvas';
@@ -24,6 +24,17 @@ const App = () => {
           justifyContent: 'center',
         }}
       >
+        <Typography
+          sx={{
+            color: 'white',
+            display: {
+              xs: 'block',
+              lg: 'none',
+            },
+          }}
+        >
+          Please use a bigger screen
+        </Typography>
         <Canvas />
       </Box>
     </Box>

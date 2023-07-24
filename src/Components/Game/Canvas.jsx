@@ -15,7 +15,10 @@ const Canvas = () => {
         border: '1px solid white',
         borderRadius: 8,
         padding: 2,
-        transform: 'scale(0.6)',
+        display: {
+          xs: 'none',
+          lg: 'block',
+        },
       }}
     >
       <Score />
